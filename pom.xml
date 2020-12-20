@@ -17,14 +17,13 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--      <dependency>-->
-            <!--        <groupId>io.spring.platform</groupId>-->
-            <!--        <artifactId>platform-bom</artifactId>-->
-            <!--        <version>Cairo-SR7</version>-->
-            <!--        <type>pom</type>-->
-            <!--        <scope>import</scope>-->
-            <!--      </dependency>-->
-
+<!--                  <dependency>-->
+<!--                    <groupId>io.spring.platform</groupId>-->
+<!--                    <artifactId>platform-bom</artifactId>-->
+<!--                    <version>Cairo-SR7</version>-->
+<!--                    <type>pom</type>-->
+<!--                    <scope>import</scope>-->
+<!--                  </dependency>-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -38,15 +37,15 @@
     <dependencies>
         <!--alibaba nacos服务发现-->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-discovery-spring-boot-starter</artifactId>
-            <version>0.2.7</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>2.1.0.RELEASE</version>
         </dependency>
         <!--alibaba nacos注册中心-->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-config-spring-boot-starter</artifactId>
-            <version>0.2.7</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2.1.0.RELEASE</version>
         </dependency>
 
         <!--spring cloud start-->
@@ -93,12 +92,12 @@
             <artifactId>druid</artifactId>
             <version>1.1.3</version>
         </dependency>
-        <!--jwt-->
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.0</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.1-jre</version>
         </dependency>
+
     </dependencies>
 
     <build>
